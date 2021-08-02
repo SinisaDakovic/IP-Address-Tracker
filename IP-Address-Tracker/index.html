@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Adress Tracker</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+        <div class="heading">
+            <h2>IP Address Tracker</h2>
+            <form id="form">
+                <input type="text" id="input" placeholder="Search for any IP address">
+                <button class="btn"><img src="images/icon-arrow.svg" alt="Arrow"></button>
+            </form>
+        </div>
+
+    <div class="informations">
+        <div class="cols">
+            <div class="ip one">
+                <h1 class="he1">Ip address</h1>
+                <p id="ip">192.212.174.101</p>
+            </div>
+            <div class="location one">
+                <h1 class="he1">location</h1>
+                <p id="location">South San Gabriel </p>
+                <p id="posc"></p>
+            </div>
+            <div class="timezone one">
+                <h1 class="he1">Timezone</h1>
+                <p id="timezone">UTC-05:00</p>
+            </div>
+            <div class="isp one">
+                <h1 class="he1">ISP</h1>
+                <p id="isp">Southern California Edison</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map">
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
